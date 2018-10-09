@@ -8,5 +8,5 @@ public class BiavciApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BiavciApplication.class, args);
-	}
+	}asdad
 }
