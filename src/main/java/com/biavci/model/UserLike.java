@@ -15,9 +15,11 @@ import javax.persistence.ManyToOne;
  * @author bduman
  */
 @Entity
-public class Like extends BaseClass implements Serializable{
+public class UserLike extends BaseClass implements Serializable {
+
     @ManyToOne
     private Document document;
+    private String like_type;
 
     public Document getDocument() {
         return document;
@@ -26,6 +28,13 @@ public class Like extends BaseClass implements Serializable{
     public void setDocument(Document document) {
         this.document = document;
     }
-    
-    
+
+    public String getLike_type() {
+        return like_type;
+    }
+
+    public void setLike_type(String like_type) {
+        this.like_type = like_type;
+    }
+
 }

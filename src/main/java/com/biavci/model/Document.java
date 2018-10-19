@@ -21,7 +21,7 @@ public class Document extends BaseClass implements Serializable {
     @OneToMany(mappedBy = "document")
     private List<Comment> comments;
     @OneToMany(mappedBy = "document")
-    private List<Like> likes;
+    private List<UserLike> likes;
     private String name;
     private String file_path;
 
@@ -33,11 +33,11 @@ public class Document extends BaseClass implements Serializable {
         this.comments = comments;
     }
 
-    public List<Like> getLikes() {
+    public List<UserLike> getLikes() {
         return likes;
     }
 
-    public void setLikes(List<Like> likes) {
+    public void setLikes(List<UserLike> likes) {
         this.likes = likes;
     }
 
