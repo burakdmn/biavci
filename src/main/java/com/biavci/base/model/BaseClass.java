@@ -27,7 +27,7 @@ public abstract class BaseClass implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
-    private int id;
+    private Long id;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date create_date;
     @ManyToOne
@@ -40,11 +40,11 @@ public abstract class BaseClass implements Serializable {
     @Version
     private long version;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
