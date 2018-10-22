@@ -1,8 +1,0 @@
-com\biavci\model\Comment.class
-com\biavci\model\Document.class
-com\biavci\model\User.class
-com\biavci\model\UserLike.class
-com\biavci\repo\DocumentRepo.class
-com\biavci\BiavciApplication.class
-com\biavci\controller\DocumentController.class
-com\biavci\base\model\BaseClass.class
